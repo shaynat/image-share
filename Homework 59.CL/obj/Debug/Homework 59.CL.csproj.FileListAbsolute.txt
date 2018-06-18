@@ -1,0 +1,7 @@
+C:\Users\shayn\source\repos\Homework 59\Homework 59.CL\bin\Debug\Homework 59.CL.dll.config
+C:\Users\shayn\source\repos\Homework 59\Homework 59.CL\bin\Debug\Homework 59.CL.dll
+C:\Users\shayn\source\repos\Homework 59\Homework 59.CL\bin\Debug\Homework 59.CL.pdb
+C:\Users\shayn\source\repos\Homework 59\Homework 59.CL\obj\Debug\Homework 59.CL.csprojResolveAssemblyReference.cache
+C:\Users\shayn\source\repos\Homework 59\Homework 59.CL\obj\Debug\Homework 59.CL.csproj.CoreCompileInputs.cache
+C:\Users\shayn\source\repos\Homework 59\Homework 59.CL\obj\Debug\Homework 59.CL.dll
+C:\Users\shayn\source\repos\Homework 59\Homework 59.CL\obj\Debug\Homework 59.CL.pdb

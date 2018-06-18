@@ -1,0 +1,40 @@
+﻿@model Homework_59.Models.LikeViewModel
+
+@{ int y = Model.Image.Id - 1;}
+@{ int z = Model.Image.Id + 1;}
+
+<h2 style="text-align:center">@Model.Image.Title</h2>
+
+@if (z <= Model.HighestId)
+{
+    <a href="/Home/ViewSingle?id=@z">
+        <span class="glyphicon glyphicon-chevron-left" style="position:absolute;top:45%; left:18%;font-size:70px;color:lightgray"></span>
+    </a>
+} 
+
+<div class="view-single" data-id="@Model.Image.Id" style="margin-top:25px;margin-left:270px">
+
+    <h3 style="text-align:center; position:absolute; top:29.5%;left:29.5%; color:hotpink;">@Model.Message</h3>
+
+    @if (Model.Message == "Like")
+    {
+        <button class="btn glyphicon glyphicon-heart" data-id="@Model.Image.Id" style="text-align:center; background-color:transparent; position:absolute; top:20%;left:27.5%; color:hotpink; font-size:70px; border-color:transparent" id="like-button"></button>
+    }
+    else
+    {
+        <span class="btn glyphicon glyphicon-heart" style="text-align:center; background-color:transparent; position:absolute; top:20%; left:27.5%; color:hotpink; opacity:.6; font-size:70px; border-color:transparent"></span>
+    }
+    <h3 style="position:absolute; top:21%;left:34%; color:hotpink; font-size:42px;" id="like-count">@Model.Image.LikeCount</h3>
+    <img src="/UploadedImages/@Model.Image.FileName" style="width:600px;border-radius:5px;" />
+</div>
+
+@if (y > 16)
+{
+    <a href="/Home/ViewSingle?id=@y">
+        <span class="glyphicon glyphicon-chevron-right" style="position:absolute;top:45%; right:18%;font-size:70px; color:lightgray"></span>
+    </a>
+}
+
+@section scripts{
+    <script src="~/Scripts/ViewSingle.js"></script>
+}
